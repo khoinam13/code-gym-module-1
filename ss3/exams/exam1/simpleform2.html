@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo form đơn giản - Exam 2</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="base.css">
+    <style>
+        .register {
+            width: 630px;
+            background-color: #FFFCAD;
+            padding-left: 6px;
+
+        }
+
+        .register__heading {
+            color: #1241FB;
+            font-size: 32px;
+            font-weight: 100;
+            background-color: #D5FCD7;
+        }
+
+        .register__label {
+            color: #4A5FA9;
+            font-size: 20px;
+            width: 130px;
+        }
+
+        .register__ground {
+            margin-bottom: 10px;
+            display: flex;
+        }
+
+        span {
+            font-size: 24px;
+            color: #4B4A33;
+            font-weight: 100px;
+        }
+
+        .register__ground--btn {
+            margin-left: 130px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="register" action="" method="get">
+            <h2 class="register__heading">
+                ĐĂNG KÍ HỌC VIÊN
+            </h2>
+            <div class="register__ground">
+                <label for="" class="register__label">Họ và tên</label>
+                <input type="text" class="regisrer__input boder-input" style="width: 280px;" name="name">
+            </div>
+            <div class="register__ground">
+                <label for="" class="register__label">Ngày sinh</label>
+                <input type="date" class="regisrer__input boder-input" style="width: 156px ;" name="date">
+            </div>
+            <div class="register__ground">
+                <label for="" class="register__label">Giới tính</label>
+                <input type="radio" class="regisrer__input" name="sex" value="man"> <span>Nam</span>
+                <input type="radio" class="regisrer__input" name="sex" value="woman"> <span>Nữ</span>
+            </div>
+            <div class="register__ground">
+                <label for="" class="register__label">Địa chỉ</label>
+                <textarea type="text" class="regisrer__input boder-input"
+                    style="width: 250px; height: 70px;"></textarea>
+            </div>
+            <div class="register__ground">
+                <label for="" class="register__label">Lớp</label>
+                <select name="class" style="width: 150px; text-align: center;">
+                    <option value="-Chọn lớp-">C8</option>
+                    <option value="-Chọn lớp-">C10</option>
+                    <option value="-Chọn lớp-">C12</option>
+                </select>
+            </div>
+            <div class="register__ground">
+                <label for="" class="register__label">Email</label>
+                <input type="email" class="regisrer__input boder-input" style="width: 200px;">
+            </div>
+            <div class="register__ground">
+                <label for="" class="register__label">Điện thoại</label>
+                <input type="number" class="regisrer__input boder-input" style="width: 200px;">
+            </div>
+            <div class="register__ground register__ground--btn">
+                <input class="input-btn" type="button" value="Gửi thông tin">
+                <input class="input-btn" type="reset" value="Nhập lại">
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

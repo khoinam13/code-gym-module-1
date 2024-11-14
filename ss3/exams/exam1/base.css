@@ -1,0 +1,31 @@
+body {
+    font-family: "VT323", monospace;
+    font-weight: 100;
+    box-sizing: border-box;
+}
+.boder-input{
+    border-style: solid;
+    border-color: #6F6F6F #E3E1DB #E3E1DB #6F6F6F;
+    border-width: 3px 2px 2px 3px;
+    height: 28px;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+}
+.input-btn {
+    font-family: "VT323", monospace;
+    background-color: #DCD9D2;
+    height: 32px;
+    border-color: #fff #929291 #929291 #fff;
+    margin-right: 8px;
+    font-size: 24px;
+    line-height: 28px;
+    color: #666461;
+    border-width: 3px;
+    box-sizing: border-box;
+}

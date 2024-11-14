@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="base.css">
+    <title>Tạo form đơn giản - Exam 1</title>
+
+    <style>
+        .hobby__form {
+            width: 618px;
+            background-color: #ffffff;
+        }
+
+        .hobby__heading {
+            background-color: #FF4D1C;
+            color: #fff;
+            text-transform: uppercase;
+            margin: 0 4px;
+            font-size: 32px;
+            line-height: 42px;
+            margin-bottom: 10px;
+            text-align: center;
+            font-weight: 100;
+        }
+
+        .hobby__ground {
+            display: flex;
+            margin-bottom: 12px;
+        }
+
+        .hobby__label {
+            color: #203DB0;
+            width: 125px;
+            text-align: end;
+            font-size: 24px;
+            margin-right: 9px;
+        }
+
+
+        .hobby__input-check-container {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .hobby__lable-input-check {
+            font-size: 22px;
+            color: #FF956B;
+            margin-right: 34px;
+            margin-left: 10px;
+        }
+
+        input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+        }
+
+        .hobby__ground--btn {
+            margin-left: 134px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" method="get" class="hobby__form">
+            <h2 class="hobby__heading">Sở thích của bạn</h2>
+            <div class="hobby__ground">
+                <label for="name" class="hobby__label">Họ và tên</label>
+                <input style="width: 270px;" type="text" id="name" name="name" class="hobby__input boder-input">
+            </div>
+            <div class="hobby__ground">
+                <label for="email" class="hobby__label">Email</label>
+                <input style="width: 190px;" type="text" id="email" name="email" class="hobby__input boder-input">
+            </div>
+            <div class="hobby__ground">
+                <label for="" class="hobby__label">Sở thích</label>
+                <div class="hobby__input-check-container">
+                    <div class="hobby__ground-input-check">
+                        <input type="checkbox" name="hobby" class="hobby__input:checkbox" value="sport"><span
+                            class="hobby__lable-input-check">Thể thao</span>
+                    </div>
+                    <div class="hobby__ground-input-check">
+                        <input type="checkbox" name="hobby" class="hobby__input:checkbox" value="music"> <span
+                            class="hobby__lable-input-check">Âm nhạc</span>
+                    </div>
+                    <div class="hobby__ground-input-check">
+                        <input type="checkbox" name="hobby" class="hobby__input:checkbox" value="read-book"> <span
+                            class="hobby__lable-input-check">Đọc sách</span>
+                    </div>
+                    <div class="hobby__ground-input-check">
+                        <input type="checkbox" name="hobby" class="hobby__input:checkbox" value="surf-the-web"><span
+                            class="hobby__lable-input-check">Lướt web</span>
+                    </div>
+                    <div class="hobby__ground-input-check">
+                        <input type="checkbox" name="hobby" class="hobby__input:checkbox" value="play-game"> <span
+                            class="hobby__lable-input-check">Chơi game</span>
+                    </div>
+                    <div class="hobby__ground-input-check">
+                        <input type="checkbox" name="hobby" class="hobby__input:checkbox" value="cinema"><span
+                            class="hobby__lable-input-check">Điện ảnh</span>
+                    </div>
+                    <div class="hobby__ground-input-check">
+                        <input type="checkbox" name="hobby" class="hobby__input:checkbox" value="tourism"><span
+                            class="hobby__lable-input-check">Du lịch</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hobby__ground hobby__ground--btn">
+                <input class="input-btn" type="button" value="Gửi thông tin">
+                <input class="input-btn" type="reset" value="Nhập lại">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
