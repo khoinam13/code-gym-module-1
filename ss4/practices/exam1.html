@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách trong CSS</title>
+    <style>
+        ul.a {
+            list-style-type: circle;
+        }
+
+        ul.b {
+            list-style-type: square;
+        }
+
+        ol.c {
+            list-style-type: upper-roman;
+        }
+
+        ol.d {
+            list-style-type: lower-alpha;
+        }
+
+        /* Đánh dấu các mục của danh sách bằng hình ảnh */
+        ul.ul-style-img {
+            list-style-image: url('http://agilearn.vn/draftfile.php/263/user/draft/510120718/bullet_red%20_2.png');
+        }
+
+        ul.a {
+            list-style-position: inside;
+        }
+
+        ul.b {
+            list-style-position: outside;
+        }
+        ul.square-inside{
+            list-style: square inside url("http://agilearn.vn/draftfile.php/263/user/draft/510120718/bullet_red%20_2.png");
+        }
+    </style>
+</head>
+
+<body>
+    <p>VD về danh sách không có thứ tự:</p>
+    <ul class="a">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <ul class="b">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+    <p>Đánh dấu các mục của danh sách bằng hình ảnh</p>
+    <ul class="ul-style-img">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+    <h2>Vị trí đánh dấu các mục trong danh sách</h2>
+    <p>Danh sách dưới đây được thiết lập list-style-position: inside:</p>
+    <ul class="a">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <p>Danh sách dưới đây được thiết lập list-style-position: outside:</p>
+    <ul class="b">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <p>"list-style-position: outside" là thiết lập mặc định.</p>
+    <h2>Danh sách – Thuộc tính rút gọn</h2>
+    <ul class="square-inside">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ul>
+
+</body>
+
+</html>

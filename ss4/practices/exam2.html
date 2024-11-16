@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng trong CSS</title>
+    <style>
+        .table-border table,
+        .table-border th,
+        .table-border td {
+            border: 1px solid black;
+        }
+
+        /* =================== */
+        .table-border-none table {
+            border-collapse: collapse;
+        }
+
+        .table-border-none table,
+        .table-border-none td,
+        .table-border-none th {
+            border: 1px solid black;
+        }
+
+        /* ====================== */
+        .table-size table,
+        .table-size td,
+        .table-size th {
+            border: 1px solid black;
+        }
+
+        .table-size table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .table-size th {
+            height: 50px;
+        }
+
+        /* ========================= */
+        .table-center-with table,
+        .table-center-with td,
+        .table-center-with th {
+            border: 1px solid black;
+        }
+
+        .table-center-with table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .table-center-with th {
+            text-align: left;
+        }
+
+        /* =============== */
+        .table-center-heght table,
+        .table-center-heght td,
+        .table-center-heght th {
+            border: 1px solid black;
+        }
+
+        .table-center-heght table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .table-center-heght td {
+            height: 50px;
+            vertical-align: bottom;
+        }
+
+        /* =================== */
+        .table-pading table,
+        .table-pading td,
+        .table-pading th {
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .table-pading table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .table-pading th,
+        .table-pading td {
+            padding: 15px;
+        }
+
+        /* ======================== */
+        .table-color table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+
+
+        .table-color th,
+        .table-color td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        .table-color tr:nth-child(even) {
+            background-color: #f2f2f2
+        }
+
+        .table-color th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Đường viền của bảng -->
+    <h1 style="color: red;">Bảng trong CSS</h1>
+    <div class="table-border">
+        <h2>Thêm đường viền cho bảng:</h2>
+        <table>
+            <tr>
+                <th>Họ đệm</th>
+                <th>Tên</th>
+            </tr>
+            <tr>
+                <td>Nguyễn Khắc</td>
+                <td>Nhật</td>
+            </tr>
+            <tr>
+                <td>Nguyễn Thị</td>
+                <td>Phương</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Bỏ các đường viền của bảng -->
+    <div class="table-border-none">
+        <h2>Tạo viền mảnh cho bảng:</h2>
+
+        <table>
+            <tr>
+                <th>Họ đệm</th>
+                <th>Tên</th>
+            </tr>
+            <tr>
+                <td>Phạm Anh</td>
+                <td>Đới</td>
+            </tr>
+            <tr>
+                <td>Nguyễn Thị</td>
+                <td>Hằng</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Chiều rộng và chiều cao của bảng -->
+    <div class="table-size">
+        <h2>Sử dụng các thuộc tính width và height</h2>
+        <p>Thiết lập chiều rộng của bảng, và chiều cao của dòng tiêu đề trong bảng:</p>
+
+        <table>
+            <tr>
+                <th>Họ đệm</th>
+                <th>Tên</th>
+                <th>Tiết kiệm ($)</th>
+            </tr>
+            <tr>
+                <td>Nguyễn Trung</td>
+                <td>Tuyến</td>
+                <td>110</td>
+            </tr>
+            <tr>
+                <td>Nguyễn Thị Xuân</td>
+                <td>Quỳnh</td>
+                <td>170</td>
+            </tr>
+            <tr>
+                <td>Nguyễn Thị Kim</td>
+                <td>Cúc</td>
+                <td>320</td>
+            </tr>
+            <tr>
+                <td>Bùi Thành</td>
+                <td>Trung</td>
+                <td>280</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Căn chỉnh theo chiều ngang -->
+    <div class="table-center-with">
+        <h2>Sử dụng thuộc tính text-align</h2>
+        <p>Thuộc tính dùng để thiết lập căn chỉnh nội dung bên trong ô của bảng theo chiều ngang (căn trái, phải, hoặc
+            giữa):</p>
+
+        <table>
+            <tr>
+                <th>Họ đệm</th>
+                <th>Tên</th>
+                <th>Tiết kiệm ($)</th>
+            </tr>
+            <tr>
+                <td>Nguyễn Trung</td>
+                <td>Tuyến</td>
+                <td>110</td>
+            </tr>
+            <tr>
+                <td>Nguyễn Thị Xuân</td>
+                <td>Quỳnh</td>
+                <td>170</td>
+            </tr>
+            <tr>
+                <td>Nguyễn Thị Kim</td>
+                <td>Cúc</td>
+                <td>320</td>
+            </tr>
+            <tr>
+                <td>Bùi Thành</td>
+                <td>Trung</td>
+                <td>280</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Căn chỉnh theo chiều dọc -->
+    <div class="table-center-heght">
+        <h2>Sử dụng thuộc tính vertical-align</h2>
+        <p>Thuộc tính dùng để căn chỉnh nội dung trong ô của bảng theo chiều dọc (căn trên, dưới, hoặc ở giữa).</p>
+
+        <table>
+            <tr>
+                <th>Họ đệm</th>
+                <th>Tên</th>
+                <th>Tiết kiệm ($)</th>
+            </tr>
+            <tr>
+                <td>Nguyễn Trung</td>
+                <td>Tuyến</td>
+                <td>110</td>
+            </tr>
+            <tr>
+                <td>Nguyễn Thị Xuân</td>
+                <td>Quỳnh</td>
+                <td>170</td>
+            </tr>
+            <tr>
+                <td>Nguyễn Thị Kim</td>
+                <td>Cúc</td>
+                <td>320</td>
+            </tr>
+            <tr>
+                <td>Bùi Thành</td>
+                <td>Trung</td>
+                <td>280</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Padding trong bảng -->
+    <div class="table-pading">
+        <h2>Sử dụng thuộc tính padding</h2>
+        <p>Thuộc tính dùng điều chỉnh khoảng cách giữa đường viền và nội dung của ô trong bảng.</p>
+
+        <table>
+            <tr>
+                <th>Họ đệm</th>
+                <th>Tên</th>
+                <th>Tiết kiệm ($)</th>
+            </tr>
+            <tr>
+                <td>Nguyễn Trung</td>
+                <td>Tuyến</td>
+                <td>110</td>
+            </tr>
+            <tr>
+                <td>Nguyễn Thị Xuân</td>
+                <td>Quỳnh</td>
+                <td>170</td>
+            </tr>
+            <tr>
+                <td>Nguyễn Thị Kim</td>
+                <td>Cúc</td>
+                <td>320</td>
+            </tr>
+            <tr>
+                <td>Bùi Thành</td>
+                <td>Trung</td>
+                <td>280</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Màu sắc trong bảng -->
+    <div class="table-color">
+        <h2>Thiết lập màu nền cho dòng tiêu đề của bảng</h2>
+        <table>
+            <tr>
+                <th>Họ đệm</th>
+                <th>Tên</th>
+                <th>Tiết kiệm ($)</th>
+            </tr>
+            <tr>
+                <td>Nguyễn Trung</td>
+                <td>Tuyến</td>
+                <td>110</td>
+            </tr>
+            <tr>
+                <td>Nguyễn Thị Xuân</td>
+                <td>Quỳnh</td>
+                <td>170</td>
+            </tr>
+            <tr>
+                <td>Nguyễn Thị Kim</td>
+                <td>Cúc</td>
+                <td>320</td>
+            </tr>
+            <tr>
+                <td>Bùi Thành</td>
+                <td>Trung</td>
+                <td>280</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+
+    </div>
+</body>
+
+</html>
