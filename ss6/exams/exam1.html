@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo giao diện giản lược của trang chủ</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            
+        }
+        .box-layout__nav{
+            width: 100%;
+            display: flex;
+            position: fixed;
+            height: 80px;
+            align-items: center;
+            z-index: 2;
+            background-color: #fff;
+        }
+        .box-layuot__list{
+            list-style-type: none;
+            flex: 1;
+            position: absolute;
+            right: 90px;
+        }
+        .box-layout__img{
+            height: 50px;
+            padding-left: 100px;
+            padding-right: 100px;
+
+        }
+        .box-layout__item{
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .box-layout__item:hover .box-layout__link{
+            color: #FA6454;
+        }   
+        .box-layout__link{
+            text-decoration: none;
+            color: #000;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .box-layout__slide{
+            padding-top: 80px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .box-layout__slide-img{
+            width: 80%;
+        }
+        .wrap{
+            height: 500px;
+            width: 100%;
+            color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box-layout__nav">
+            <img src="https://www.pngmart.com/files/23/Free-Logos-PNG-File.png" alt="" class="box-layout__img">
+            <ul class="box-layuot__list">
+                <li class="box-layout__item"><a href="" class="box-layout__link">Home</a></li>
+                <li class="box-layout__item"><a href="" class="box-layout__link">About</a></li>
+                <li class="box-layout__item"><a href="" class="box-layout__link">Menu</a></li>
+                <li class="box-layout__item"><a href="" class="box-layout__link">We</a></li>
+            </ul> 
+        </div>
+        <div class="box-layout__slide"><img class="box-layout__slide-img" src="https://tse1.mm.bing.net/th?id=OIP.5gMSwAlk7NgejLo1HYyCewHaEE&pid=Api&P=0&h=220"></div>
+        <div class="wrap"></div>
+    </div>
+</body>
+</html>
