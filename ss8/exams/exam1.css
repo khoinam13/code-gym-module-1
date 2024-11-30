@@ -1,0 +1,118 @@
+.rwd__header{
+    height: 45px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px 0px 14px;
+    position: fixed;
+    z-index: 2;
+    left: 0; right: 0;
+}
+.rwd__nav{
+    list-style-type: none;
+}
+.rwd__nav-item{
+    display: inline-block;
+    margin-right: 10px;
+}
+.rwd__nav-item:hover .rwd__nav-link{
+    font-weight: 600;
+}
+.rwd__nav-link{
+    text-decoration: none;
+    font-size: 16px;
+    color: #cdcdcd;
+
+}
+.rwd__nav-login{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #cdcdcd;
+}
+.rwd__nav-login:hover{
+    font-weight: 600;
+}
+.rwd__content{
+    display: flex;
+    position: relative;
+    padding-top: 45px;
+}
+.rwd__side-bar,.rwd__ads{
+    flex: 2;
+    background-color: #c6cac9;
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+    padding-top: 20px;
+    height: 100vh;
+    position: sticky;
+    top: 45px;
+    align-self: start;
+}
+/* sidebar */
+.rwe__side-list{
+    list-style-type: none;
+}
+.rwd__side-item{
+    margin-bottom: 10px;
+}
+.rwd__side-link{
+    font-size: 14px;
+    color: blue;
+    text-decoration: none;
+}
+.rwd__main{
+    flex: 8;
+    height: 5000px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+.rwd__section{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+.rwd__section-heading{
+
+}
+.rwd__section-title{
+
+}
+/* rwd__ads */
+.rwd__ads img{
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    height: 100px;
+}
+.rwd__footer{
+    background-color: #5b5959;
+    padding: 20px;
+}
+.rwd__footer-title{
+    color: #fff;
+    line-height: 24px;
+}
+/* media web */
+@media (max-width: 480px){
+    .rwd__content{
+        flex-direction: column;
+    }
+    .rwd__side-bar,.rwd__ads,.rwd__main{
+        width: 100%;
+    }
+    .rwd__side-bar{
+        flex-direction: row;
+    
+    }
+    .rwd__side-item{
+        display: inline-block;
+    }
+}
+
+
