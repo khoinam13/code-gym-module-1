@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xây dựng các layout</title>
+    <link rel="stylesheet" href="exam2.css">
+    <style>
+        .header__logo img, .header__banner img{
+            height: 100%;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        ul{
+            list-style: none;
+        }
+        li.nav__item{
+            display: inline-block;
+            margin-right: 20px;
+            padding: 16px 40px;
+            border-right: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .nav__seach input{
+            width: 90%;
+            font-size: 16px;
+            line-height: 20px;
+            padding: 16px 24px;
+            border: 1px solid rgb(120, 120, 163);
+            
+        }
+        .nav__cart img{
+            width: 40px;
+        }
+        .side{
+            text-align: center;
+        }
+        .side li{
+            margin-bottom: 20px;
+            font-size: 24px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      
+        }
+        .product ul{
+            display: flex;
+        }
+        .product ul li{
+            width: 33.33%;
+            margin-right: 20px;
+        }
+        .product img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header__logo">
+                <img src="https://bloggytalky.com/wp-content/uploads/2017/07/create-a-free-logo-design-logo-designs-design-a-free-logo-design-a-free-logo-alltech-just-free-logo-design.png" alt="">
+            </div>
+               
+           <div class="header__banner">
+                <img src="https://hoangphongevent.com/wp-content/uploads/2022/07/bang-ron-khai-truong-shop-quan-ao-3.jpg" alt="">
+                <img src="https://hoangphongevent.com/wp-content/uploads/2022/07/bang-ron-khai-truong-shop-quan-ao-3.jpg" alt="">
+                <img src="https://hoangphongevent.com/wp-content/uploads/2022/07/bang-ron-khai-truong-shop-quan-ao-3.jpg" alt="">
+           </div>
+        </header>
+        <nav >
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link">Product</a>
+                </li>
+            </ul>
+            <div class="nav__seach">
+                <input type="text " placeholder="Tìm kiếm sản phẩm">
+            </div>
+            <div class="nav__cart">
+                <a href="cart.html">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1051/1051590.png" alt="">
+                </a>
+            </div>
+        </nav>
+        <div class="main">
+            <aside class="side">
+                <h2>Danh mục sản phẩm</h2>
+                <ul>
+                    <li><a href="">Áo thun</a></li>
+                    <li><a href="">Áo khoác</a></li>
+                    <li><a href="">Quần Jean</a></li>
+                    <li><a href="">Áo Phao</a></li>
+                </ul>
+            </aside>
+            <section class="product">
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="https://s1.storage.5giay.vn/image/2022/10/20221010_bd8f2d3d0a62f4cdc497a051b14f8792_1665417093.jpg" alt="">
+                            <h3>Áo thun siêu rẻ</h3>
+                            <span>60000 đ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://s1.storage.5giay.vn/image/2022/10/20221010_bd8f2d3d0a62f4cdc497a051b14f8792_1665417093.jpg" alt="">
+                            <h3>Áo thun siêu rẻ</h3>
+                            <span>60000 đ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://s1.storage.5giay.vn/image/2022/10/20221010_bd8f2d3d0a62f4cdc497a051b14f8792_1665417093.jpg" alt="">
+                            <h3>Áo thun siêu rẻ</h3>
+                            <span>60000 đ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://s1.storage.5giay.vn/image/2022/10/20221010_bd8f2d3d0a62f4cdc497a051b14f8792_1665417093.jpg" alt="">
+                            <h3>Áo thun siêu rẻ</h3>
+                            <span>60000 đ</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

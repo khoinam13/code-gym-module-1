@@ -1,0 +1,31 @@
+.container{
+    max-width: 1440px;
+    align-items: center;
+}
+.slide__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+.slide__item{
+    text-align: center;
+    width: calc(25% - 80px);
+    margin-right: 20px;
+    border: 1px solid  #000;
+    margin-bottom: 20px;
+}
+.slide__img{
+    width: 100%;
+}
+@media (max-width: 1200px){
+    .slide__item{
+        width: calc(50% - 40px);
+    }
+}
+@media(max-width: 900px){
+    .slide__item{
+        width: 100%;
+    }
+}
